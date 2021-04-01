@@ -5,13 +5,15 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="mobile-web-app-capable" content="yes" />
   <title>Portfolio</title>
+  <link href="image/sun-fab2.png" rel="icon" />
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" />
 </head>
 
 <body>
-
   <div class="container" id="nav">
     <ul>
       <li>
@@ -31,11 +33,25 @@
       </li>
     </ul>
   </div>
+  <div id="myNav1">
+    <span title="Menu" style="font-size: 30px; color: white; cursor: pointer" onclick="openNav()"> &#9776;</span>
+    <span class="glow" style="text-align: center; font-weight: bolder;">&nbsp;&nbsp;&nbsp;S</span>
+  </div>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" id="logo" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a title="Home" href="#home">Home</a>
+      <a title="About" href="#about">About</a>
+      <a title="Project" href="#project">Project</a>
+      <a title="Blog" href="#">Blog</a>
+      <a title="Contact me" href="#contact">Contact</a>
+    </div>
+  </div>
   <div id="fixed">
-    <br>
+    <br />
     <span>PRIVACY POLICY GitHub</span>
-    <br><br>
-    <span>Copyright © Suraj 2021</span>
+    <br /><br />
+    <span>Copyright © Suraj 2021</span><br>
 
     <div id="contact-info">
       <span class="links">
@@ -96,7 +112,7 @@
       </span>
     </div>
   </div>
-  <span id="main-cartoon"><img src="./image/rv-cartoon1.png"></span>
+  <span id="main-cartoon"><img src="./image/rv-cartoon1.png" /></span>
   <div id="home">
     <div id="home-pic"></div>
     <div id="home-text">
@@ -106,53 +122,150 @@
       </p>
       <br /><br />
       <p style="font-weight: 500">
-        I'm a Sophomore pursuing Electronics and communication Engineering
-        at NIT Patna.
+        I'm a Sophomore pursuing Electronics and communication <br> Engineering at
+        NIT Patna.
       </p>
     </div>
   </div>
-
-
+  <div id="mainbox">
+    <div id="avt-img">
+      <img src="image/rv-cartoon1.png" alt="An Avtar">
+    </div>
+    <div id="b1" class="box">
+      <ul>
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
+    </div>
+    <div id="b2" class="box">
+      <ul>
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
+    </div>
+    <div id="b3" class="box">
+      <ul>
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <div id="about">
-    <h1 style="color: white; font-size: 2rem; text-align: center">
-      About
-    </h1>
+    <h1 title="about me" style="color: white; font-size: 2rem; text-align: center">About</h1>
     <div id="about-text">
-      <div style="color: white; font-weight: 500;">
+      <div style="color: white; font-weight: 500">
         <br /><br />
         I am Suraj Kumar, a Sophomore pursuing B.Tech ECE form National
         Institute of Technology Patna Bihar. Professionly , I am a beginner
-        problem Solver(Tech), Machine Learning Enthusiast and noob
-        web-dev.
-        <br><br>
-        I'm currently Cooridnator of Team Gray Interface Hackslash NIT PATNA.
+        problem Solver(Tech), Machine Learning Enthusiast and noob web-dev.
+        <br /><br />
+        I'm currently Cooridnator of Team Gray Interface <span><a title="HackSlash Offical website" target="_blank"
+            style="text-decoration: none; color: rgb(76, 192, 9);" href="https://hackslash.co.in/">Hackslash NIT
+            PATNA.</a></span>
       </div>
-      <br>
+      <br />
       <span style="color: white; font-weight: 800">
-        <br> <span style="background-color: red;">&nbsp;&nbsp; My Skills &nbsp;&nbsp;</span> <br><br>
+        <br />
+        <span title="my skill" style="background-color: red">&nbsp;&nbsp; My Skills &nbsp;&nbsp;</span>
+        <br /><br />
       </span>
       <span class="skill" style="color: white; font-weight: 500">
         <ul>
-          <li>TensorFlow</li>
+          <li>Machine Learning</li>
           <li>OpenCV</li>
           <li>Flask</li>
-          <li>C langauge</li>
-          <li>C++</li>
-          <li>Html</li>
-          <li>CSS</li>
+          <li>C/C++</li>
+          <li>Python</li>
+          <li>Html/CSS</li>
+          <li>JavaScript</li>
         </ul>
       </span>
     </div>
   </div>
+  <div id="project">
+    <h1 title="My projects" style="color: white; font-size: 2rem; text-align: center">Project</h1><br><br>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="image/1.png" alt="Project image">
+          <h3 style="color: red;">Cartoonify </h3>
+          <p style="font-weight: bold;">ML Computer Vision Project using OpenCV and Python </p>
+          <p>Convert an image into a cartoon image</p>
+          <br>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <br><br>
+          <img src="image/discordbot.png" alt="Project image"><br><br>
+          <h3 style="color: red;">Discord-Bot</h3>
+          <p style="font-weight: bold;">Using Python and Image API</p>
+          <p>This is a Bot on Discord which gives you some quote and diffrent images as per your command </p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="image/face-detection.jpg" alt="Project image"><br>
+          <h3 style="color: red;">Face-Detection</h3>
+          <p style="font-weight: bold;">Using OpenCV and Pyhton</p><br>
+          <p>Detect faces in a image and webcam</p>
+          <br>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="image/cloak.jpeg" alt="Project image">
+          <h3 style="color: red;">Cloak</h3>
+          <p style="font-weight: bold;">Using OpenCV and Python</p>
+          <p>A cloth having only one color acts as a invisible cloak</p>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="blog">
+    <h1 title="My Blogs" style="color: white; font-size: 2rem; text-align: center">Blog</h1><br><br>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="image/OutputFile.png" alt="Project image">
+          <h3 style="color: red;"> Visulization of Decision Tree</h3>
+          <p style="font-weight: bold;">Algorithm in Machine Learning</p>
+          <a href="https://kumarsuraj-bit.medium.com/visualization-of-decision-tree-machine-learning-python-sklearn-graphviz-f9dbd6435869" target="_blank" style="text-decoration: none;">Read This on Medium</a>
+          <br>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <br><br>
+          <img src="image/next.webp" alt="Project image">
+          <h3 style="color: red;"></h3>
+          <p style="font-weight: bold;"></p>
+          <p></p><br><br>
+        </div>
+      </div> 
+    </div>
+  </div>
   <div id="contact">
+    <h2 style="color:white; font-size: 2rem; ">Contact Me</h2>
+    <br><br>
     <div class="container">
-      <form action="#">
+      <form
+        action="https://script.google.com/macros/s/AKfycbzMa-l7LUfB95Mjme4YDK3krTMvWT-t_5TB0BX0LU_3O3-BohU7cPta/exec">
         <div class="row">
           <div class="col-25">
             <label for="fname">Your Name</label>
           </div>
           <div class="col-75">
-            <input type="text" id="fname" name="name" placeholder="Your name.." required>
+            <input type="text" id="fname" name="name" placeholder="Your name.." required />
           </div>
         </div>
         <div class="row">
@@ -160,36 +273,51 @@
             <label for="lname">Email</label>
           </div>
           <div class="col-75">
-            <input type="text" id="lname" name="email" placeholder="Your email.." required>
+            <input type="text" id="lname" name="email" placeholder="Your email.." required />
           </div>
         </div>
-        <!-- <div class="row">
-          <div class="col-25">
-            <label for="country">Country</label>
-          </div>
-          <div class="col-75">
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-          </div>
-        </div> -->
+
         <div class="row">
           <div class="col-25">
             <label for="subject">Message</label>
           </div>
           <div class="col-75">
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+            <textarea id="subject" name="message" placeholder="Write something.." style="height: 200px"
+              required></textarea>
           </div>
         </div>
         <div class="row" id="con-btn">
-          <input type="submit" value="Submit">
+          <input type="submit" value="Send" />
         </div>
       </form>
     </div>
   </div>
+  <script>
+    window.onscroll = function () {
+      scrollFunction();
+    };
 
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        document.getElementById("myNav1").style.height = "6vh";
+        document.getElementById("myNav1").style.padding = "0.33rem";
+
+      } else {
+        document.getElementById("myNav1").style.height = "8vh";
+        document.getElementById("myNav1").style.padding = "0.625rem";
+      }
+    }
+    function openNav() {
+      document.getElementById("myNav").style.width = "80%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
 </body>
 
 </html>
