@@ -385,7 +385,7 @@ width: 100vw;
   padding-left: 2.3vw;
 }
 #home-text span {
-  font-family: "Alex Brush", cursive;
+  
   font-size: 65px;
   font-weight: bolder;
   background: -webkit-linear-gradient(-45deg, white, red, rgb(204, 248, 9));
@@ -398,12 +398,12 @@ width: 100vw;
 #home-pic {
   
   height: 250px;
-  border-radius: 0.5rem;
-  background-image: url("image/about1.jpg");
+  border-radius: 1rem;
+  background-image: url("image/2021-06-07 a.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border: 1px solid black;
+  border: 2px solid black;
   transition: 0.5s;
 }
 #home-pic:hover {
@@ -582,8 +582,21 @@ input[type=submit]:hover {
     width: 100%;
     margin-top: 0;
   }
+  #home{
+    min-height: 80vh;
+  }
+  #home-text span {
+    font-family: "Alex Brush", cursive;
+    }
 }
-
+@media screen and (min-width: 691px) {
+ #home{
+   min-height: 100vh;
+ }
+ #home-text span {
+ font-family: "Alex Brush", cursive;
+ }
+}
 
 
 
@@ -598,7 +611,7 @@ input[type=submit]:hover {
   position: relative;
   
   width: 22rem;
-  height: 23rem;
+  height: 16rem;
   margin: 5rem;
   z-index: -5;
 }
@@ -735,7 +748,7 @@ media-query
   }
   #home{
     flex-direction: column;
-
+    min-height: 50vh;
   }
   #home-pic{
     margin-top: 5vh;
@@ -801,9 +814,7 @@ media-query
 ==========================
 ==========================*/
 
-#home{
-  min-height: 80vh;
-}
+
 #about{
   min-height:100vh;
 }
