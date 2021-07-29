@@ -397,7 +397,7 @@ width: 100vw;
 }
 #home-pic {
   
-  height: 250px;
+  height: 300px;
   border-radius: 1rem;
   background-image: url("image/2021-06-07 a.jpeg");
   background-repeat: no-repeat;
@@ -752,9 +752,7 @@ media-query
     min-height: 50vh;
   }
   #home-pic{
-    margin-top: 5vh;
-    height: 200px;
-    width: 200px;
+    margin-top: 6vh;
     margin-left: 4.2rem;
   }
   #home-text span{
