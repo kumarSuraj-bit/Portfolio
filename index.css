@@ -375,7 +375,7 @@ width: 100vw;
 ============================== */
 #home {
   margin-left: 10vw;
-  margin-top: 7rem;
+  margin-top: 25vh;
   display: flex;
   flex-direction: row;
 }
@@ -396,8 +396,8 @@ width: 100vw;
   color: white;
 }
 #home-pic {
-  
-  height: 300px;
+  height: 270px;
+  width: auto;
   border-radius: 1rem;
   background-image: url("image/2021-06-07 a.jpeg");
   background-repeat: no-repeat;
@@ -456,6 +456,7 @@ project
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 15px;
   text-align: center;
+  border-radius: 0.2rem;
   background-color: #f1f1f1;
 }
 .card img{
@@ -690,6 +691,14 @@ media-query
 ====================================*/
 
 
+/*
+//////////////////////////////////////////
+//////////////////////////////////////////
+              for mobile
+//////////////////////////////////////////
+//////////////////////////////////////////
+*/
+
 @media only screen and (max-width: 690px) {
   *{
     letter-spacing: 1.5px;
@@ -750,10 +759,12 @@ media-query
   #home{
     flex-direction: column;
     min-height: 50vh;
+    margin-top: 15vh;
   }
   #home-pic{
-    margin-top: 6vh;
-    margin-left: 4.2rem;
+    height: 30vh;
+    width: 260px;
+    margin-left: 2.5rem;
   }
   #home-text span{
     font-size: 50px;
@@ -786,6 +797,17 @@ media-query
     margin-left: 15vw;
   }
 }
+
+/*
+//////////////////////////////////////////
+//////////////////////////////////////////
+              for laptop
+//////////////////////////////////////////
+//////////////////////////////////////////
+*/
+
+
+
 @media only screen and (min-width: 690px) {
   
   #fixed {
@@ -795,6 +817,7 @@ media-query
   }
   #home-pic{
     flex: 1;
+    
   }
   #myNav1{
     display: none;
@@ -824,5 +847,5 @@ media-query
   min-height: 100vh;
 }
 #contact{
-  min-height: 100vh;
+  min-height: 80vh;
 }
